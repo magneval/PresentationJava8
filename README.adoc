@@ -25,7 +25,7 @@ https://github.com/magneval/
 * les Dates
 * Nashhorn
 * la programmation fonctionnelle
-* [.line-through]#Jigsaw# les profiles
+* +++<s>Jigsaw</s>+++ les profiles
 * le future
 
 == les api de dates
