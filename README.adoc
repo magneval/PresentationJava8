@@ -9,6 +9,7 @@
 :revealjs_hideAddressBar: true
 :linkattrs:
 :imagesdir: ./images
+:icons: font
 :source-highlighter: highlightjs
 
 = Présentation Java 8
@@ -24,7 +25,7 @@ https://github.com/magneval/
 === Plan
 [%step]
 * +++<s>Jigsaw</s>+++ les profiles
-* Nashhorn
+* Nashorn
 * évolutions des annotations
 * l'API java.time
 * la programmation fonctionnelle
@@ -172,6 +173,26 @@ https://www.youtube.com/watch?v=TCaBno_Euqk["démo OSGI^", window="_blank"]
 video::TCaBno_Euqk[youtube]
 
 == Nashorn
+
+Depuis Java 8 Rhino a été remplacer par Nashorn icon:smile-o[] :-D
+[[app-listing]] 
+[source,js]  
+.hello.js 
+---- 
+var hello = function() {
+  print("Hello Nashorn!");
+};
+
+hello(); 
+----
+
+[source]
+----
+$ jjs hello.js
+Hello Nashorn!
+$
+----
+
 
 == les évolutions d'API
 
