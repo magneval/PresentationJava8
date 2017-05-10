@@ -1,0 +1,53 @@
+// ---
+// layout: master
+// title: Présentation VM et docker
+// :backend: deckjs
+// ---
+:revealjs_mouseWheel: true
+:revealjsdir: .
+:revealjs_history: true
+:revealjs_hideAddressBar: true
+:imagesdir: ./images
+:source-highlighter: highlightjs
+
+= Présentation Java 8
+
+== Présentation des nouveauté de Java8
+
+Charles de MAGNEVAL +
+Charles.de_magneval@open-groupe.com +
+v1.0, 2017-04-10 +
+ +
+https://github.com/magneval/
+
+=== Plan
+[%step]
+* les Dates
+* Nashhorn
+* la programmation fonctionnelle
+* Jigsaw les profiles
+* le future
+
+== les api de dates
+
+== Nashorn
+
+== la programmation fonctionnelle
+
+=== les Optionnal
+
+=== les Interfaces fonctionnelles
+
+=== les Lambdas
+
+=== Les références a des méthodes
+
+=== les 
+== le Future
+Quid de l’avenir ?
+
+Java 9
+* Jigsaw
+* Precompilateur
+* Value Object
+A quand du Java sur Arduino
