@@ -7,6 +7,7 @@
 :revealjsdir: .
 :revealjs_history: true
 :revealjs_hideAddressBar: true
+:linkattrs:
 :imagesdir: ./images
 :source-highlighter: highlightjs
 
