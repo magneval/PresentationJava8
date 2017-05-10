@@ -165,8 +165,10 @@ image::CompactProfiles.png[Il existe 3 profils]
 
 == Java SE8 Compact Profil 1
 
-.démo OSGI
+https://www.youtube.com/watch?v=TCaBno_Euqk[démo OSGI]
+
 video::TCaBno_Euqk[youtube]
+
 
 == Nashorn
 
