@@ -171,7 +171,7 @@ https://www.youtube.com/watch?v=TCaBno_Euqk["démo OSGI^", window="_blank"]
 
 video::TCaBno_Euqk[youtube]
 
-https://github.com/magneval/PresJava8IOT/blob/gh-pages/Slides.adoc["!Java8 pour L'IOT^", window="_blank"]
+https://github.com/magneval/PresJava8IOT/blob/gh-pages/Slides.adoc["Java8 pour L'IOT^", window="_blank"]
 
 == Nashorn
 
@@ -285,20 +285,42 @@ Math.xxxExact(<T> x,<T> y) throw ArithmeticException
 
 == la programmation fonctionnelle
 
+Java8 fait la part belle à la programmation fonctionnelle
+
 === les Références Optionnelles (Optional)
 
 
 === les Interfaces fonctionnelles
 
+Single Abstract Method interfaces (SAM Interfaces) :
+* java.lang.Runnable
+* java.awt.event.ActionListener
+* java.util.Comparator
+
+[source]
+----
+@FunctionalInterface 
+public interface Runnable { 
+    void run(); 
+}
+----
+Le nouveau package http://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html[java.util.function] propose d’ailleurs un certain nombre d’interfaces fonctionnelles répondant à divers usages.
+
+
 === les Lambdas
 
 === Les références a des méthodes
+     // Assignment context
+     Predicate<String> p = String::isEmpty;
 
-=== les Méthodes par dfaut
+=== les Méthodes par défaut
 
-=== les méthodes stiques dans les interfaces
+
+=== les méthodes statiques dans les interfaces
+
 
 == Les Streams
+
 
 == le Future
 Quid de l’avenir ?
