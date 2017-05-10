@@ -171,6 +171,8 @@ https://www.youtube.com/watch?v=TCaBno_Euqk["démo OSGI^", window="_blank"]
 
 video::TCaBno_Euqk[youtube]
 
+https://github.com/magneval/PresJava8IOT/blob/gh-pages/Slides.adoc["!Java8 pour L'IOT^", window="_blank"]
+
 == Nashorn
 
 Depuis Java 8 Rhino a été remplacer par Nashorn :-D
@@ -245,12 +247,14 @@ Duration oneDay = Duration.between(today, yesterday);
 * waitFor(long timeout,TimeUnit unit)
 * destroyForcibly()
 
-  if (process.wait(MY_TIMEOUT, TimeUnit.MILLISECONDS)){
+[source]
+----
+if (process.wait(MY_TIMEOUT, TimeUnit.MILLISECONDS)){
        //success! }
 else {
     process.destroyForcibly();
 }
-  
+----
 
 === les autres évolution diverse
 
@@ -267,8 +271,11 @@ else {
 peut être remplacer par
 
   Array.parallelSort(monTableau)
+  
 * dispariton du PermGem
-* 
+* Encodage/Décodage Base64
+* Généralization de l'inférence de type
+
 [NOTE.speaker]
 --
 Adder concurrent qui permet de continué l'ajout même après un probème de contention
