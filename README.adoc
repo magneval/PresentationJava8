@@ -166,7 +166,7 @@ image::CompactProfiles.png[Il existe 3 profils]
 
 == Java SE8 Compact Profil 1
 
-https://www.youtube.com/watch?v=TCaBno_Euqk[démo OSGI^]
+https://www.youtube.com/watch?v=TCaBno_Euqk["démo OSGI^", window="_blank"]
 
 video::TCaBno_Euqk[youtube]
 
