@@ -25,7 +25,8 @@ https://github.com/magneval/
 [%step]
 * +++<s>Jigsaw</s>+++ les profiles
 * Nashhorn
-* les Dates
+* évolutions des annotations
+* l'API java.time
 * la programmation fonctionnelle
 * les Streams
 * le future
@@ -170,14 +171,51 @@ https://www.youtube.com/watch?v=TCaBno_Euqk["démo OSGI^", window="_blank"]
 
 video::TCaBno_Euqk[youtube]
 
-
 == Nashorn
 
-== les APIs de dates
+== les évolutions d'API
+
+=== évolutions des annotations
+
+=== l'API java.time
+
+=== contrôle des processus de l'OS
+
+* isAlive()
+* waitFor(long timeout,TimeUnit unit)
+* destroyForcibly()
+
+  if (process.wait(MY_TIMEOUT, TimeUnit.MILLISECONDS)){
+       //success! }
+else {
+    process.destroyForcibly();
+}
+  
+
+=== les autres évolution diverse
+
+* les Concurrent Adders
+* Opérations Numériques Exactes
+* Génération Aléatoire Sécurisée
+* les tri en parallèle
+
+  Array.sort(monTableau)
+
+peut être remplacer par
+
+  Array.parallelSort(monTableau)
+
+[NOTE.speaker]
+--
+Adder concurrent qui permet de continué l'ajout même après un probème de contention
+addExact(int x, int y) 
+Math.xxxExact(<T> x,<T> y) throw ArithmeticException
+--
 
 == la programmation fonctionnelle
 
-=== les Optionnal
+=== les Références Optionnelles (Optional)
+
 
 === les Interfaces fonctionnelles
 
