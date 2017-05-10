@@ -41,7 +41,7 @@ image::CompactProfiles.png[Il existe 3 profils]
 
 [options="header,footer"]
 
-[cols="1a,1a,1a"]
+[cols="1a,1a,1a", width="100%"]
 |===
 | compact1                    | compact2                   | compact3
 | java.io                     | java.sql                   | java.lang.instrument
@@ -62,10 +62,10 @@ image::CompactProfiles.png[Il existe 3 profils]
 *                                                            type
 *                                                            util
 
-| java.math                   | javax.rmi.ssl           | java.security.acl
-| java.net                    | javax.sql               | java.util.prefs
-|                             | javax.transaction       | javax.annotation.processing
-|                             | javax.transaction.xa    | java.lang.management
+| java.math                   | javax.rmi.ssl              | java.security.acl
+| java.net                    | javax.sql                  | java.util.prefs
+|                             | javax.transaction          | javax.annotation.processing
+|                             | javax.transaction.xa       | java.lang.management
 | java.nio
 
 * channels
@@ -90,27 +90,27 @@ image::CompactProfiles.png[Il existe 3 profils]
 *                                       transform.stream
 *                                       validation
 *                                       xpath
-                                                        | javax.management
+                                                           | javax.management
 
-*                                                          loading
-*                                                          modelbean
-*                                                          monitor
-*                                                          openmbean
-*                                                          relation
-*                                                          remote
-*                                                          remote.rmi
-*                                                          timer
+*                                                            loading
+*                                                            modelbean
+*                                                            monitor
+*                                                            openmbean
+*                                                            relation
+*                                                            remote
+*                                                            remote.rmi
+*                                                            timer
 | java.security
 
  * cert
  * interfaces
  * spec
-                             |     | javax.naming
+                              |                            | javax.naming
  
- * directory
- * event
- * ldap
- * spi
+ *                                                           directory
+ *                                                           event
+ *                                                           ldap
+ *                                                           spi
 | java.util
 
 * concurrent
@@ -121,37 +121,39 @@ image::CompactProfiles.png[Il existe 3 profils]
 * regex
 * spi
 * zip
-| org.w3c.dom
+                              | org.w3c.dom
 
-* bootstrap
-* events
-* ls
-| javax.xml.crypto
+*                               bootstrap
+*                               events
+*                               ls
+                                                           | javax.xml.crypto
 
-* crypto.dom
-* crypto.dsig
-* crypto.dsig.dom
-* crypto.dsig.keyinfo
-* crypto.dsig.spec
+*                                                            crypto.dom
+*                                                            crypto.dsig
+*                                                            crypto.dsig.dom
+*                                                            crypto.dsig.keyinfo
+*                                                            crypto.dsig.spec
 
-|  |       | javax.security.auth.kerberos
-|   |          | javax.security.sasl
-|                |              | javax.sql.rowset
+|                             |                            | javax.security.auth.kerberos
+|                             |                            | javax.security.sasl
+|                             |                            | javax.sql.rowset
 
-* serial
-* spi
-|            | org.xml.sax
-* ext
-* helpers
-| javax.tools
+*                                                            serial
+*                                                            spi
+|                             | org.xml.sax
+
+*                               ext
+*                               helpers
+                                                           | javax.tools
 | javax.crypto
 
 * interfaces
 * spec
-|                            | org.ieft.jgss
+                              |                            | org.ieft.jgss
 | javax.net
 
-* ssl               |                            | javax.script
+* ssl
+                              |                            | javax.script
 | javax.security.auth
 
 * auth.callback
