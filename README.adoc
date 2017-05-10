@@ -22,15 +22,153 @@ https://github.com/magneval/
 
 === Plan
 [%step]
-* les Dates
-* Nashhorn
-* la programmation fonctionnelle
 * +++<s>Jigsaw</s>+++ les profiles
+* Nashhorn
+* les Dates
+* la programmation fonctionnelle
+* les Streams
 * le future
 
-== les api de dates
+== Les Profiles
+Pas encore Jigsaw
+
+Mais l’instruction de la notion de profils, qui permet un sous découpage de la VM
+
+.Il existe 3 profils
+image::CompactProfiles.png[Il existe 3 profils]
+
+== Java SE8 compact profils
+
+[options="header,footer"]
+
+[cols="1a,1a,1a"]
+|===
+| compact1                    | compact2                   | compact3
+| java.io                     | java.sql                   | java.lang.instrument
+| java.lang
+
+* annotation
+* invoke
+* ref
+* reflect
+                              | java.rmi
+
+*                                activation
+*                                registry
+*                                server
+                                                           | javax.lang.model
+
+*                                                            element
+*                                                            type
+*                                                            util
+
+| java.math                   | javax.rmi.ssl           | java.security.acl
+| java.net                    | javax.sql               | java.util.prefs
+|                             | javax.transaction       | javax.annotation.processing
+|                             | javax.transaction.xa    | java.lang.management
+| java.nio
+
+* channels
+* channels.spi
+* charset
+* charset.spi
+* file
+* file.attribute
+* file.spi
+                              | javax.xml
+
+*                                       datatype
+*                                       namespace
+*                                       parsers
+*                                       stream
+*                                       stream.events
+*                                       stream.util
+*                                       transform
+*                                       transform.dom
+*                                       transform.sax
+*                                       transform.stax
+*                                       transform.stream
+*                                       validation
+*                                       xpath
+                                                        | javax.management
+
+*                                                          loading
+*                                                          modelbean
+*                                                          monitor
+*                                                          openmbean
+*                                                          relation
+*                                                          remote
+*                                                          remote.rmi
+*                                                          timer
+| java.security
+
+ * cert
+ * interfaces
+ * spec
+                             |     | javax.naming
+ 
+ * directory
+ * event
+ * ldap
+ * spi
+| java.util
+
+* concurrent
+* concurrent.atomic
+* concurrent.locks
+* jar
+* logging
+* regex
+* spi
+* zip
+| org.w3c.dom
+
+* bootstrap
+* events
+* ls
+| javax.xml.crypto
+
+* crypto.dom
+* crypto.dsig
+* crypto.dsig.dom
+* crypto.dsig.keyinfo
+* crypto.dsig.spec
+
+|  |       | javax.security.auth.kerberos
+|   |          | javax.security.sasl
+|                |              | javax.sql.rowset
+
+* serial
+* spi
+|            | org.xml.sax
+* ext
+* helpers
+| javax.tools
+| javax.crypto
+
+* interfaces
+* spec
+|                            | org.ieft.jgss
+| javax.net
+
+* ssl               |                            | javax.script
+| javax.security.auth
+
+* auth.callback
+* auth.login
+* auth.spi
+* auth.x500
+* cert||
+|===
+
+== Java SE8 Compact Profil 1
+
+.démo OSGI
+video::TCaBno_Euqk[youtube]
 
 == Nashorn
+
+== les APIs de dates
 
 == la programmation fonctionnelle
 
@@ -42,7 +180,12 @@ https://github.com/magneval/
 
 === Les références a des méthodes
 
-=== les 
+=== les Méthodes par dfaut
+
+=== les méthodes stiques dans les interfaces
+
+== Les Streams
+
 == le Future
 Quid de l’avenir ?
 
