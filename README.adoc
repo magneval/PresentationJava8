@@ -26,8 +26,7 @@ https://github.com/magneval/
 [%step]
 * +++<s>Jigsaw</s>+++ les profiles
 * Nashorn
-* évolutions des annotations
-* l'API java.time
+* les évolutions d'APIs
 * la programmation fonctionnelle
 * les Streams
 * le future
@@ -174,7 +173,7 @@ video::TCaBno_Euqk[youtube]
 
 == Nashorn
 
-Depuis Java 8 Rhino a été remplacer par Nashorn icon:smile-o[] :-D
+Depuis Java 8 Rhino a été remplacer par Nashorn :-D
 [[app-listing]] 
 [source,js]  
 .hello.js 
@@ -193,12 +192,52 @@ Hello Nashorn!
 $
 ----
 
+Le moteur peut être embarquer comme interpréteur dans du code Java
 
-== les évolutions d'API
+[NOTE.speaker]
+--
+icon:smile-o[] 
+--
+
+== les évolutions d'APIs
 
 === évolutions des annotations
+Il est possible de mettre plusieurs fois la même annotaion sur un éléments
+avant :
+
+[source]
+----
+@Schedules {
+ @Schedule(dayOfMonth="last") ,
+ @Schedule(dayOfWeek="Fri", hour="23") 
+}
+public void doPeriodicCleanup() { ... }
+----
+
+après :
+
+[source]
+----
+@Schedule(dayOfMonth="last") 
+@Schedule(dayOfWeek="Fri", hour="23") 
+public void doPeriodicCleanup() { ... }
+----
 
 === l'API java.time
+
+Oracle a intégrer l'API de Joda-Time dans le package java.time :
+
+[source]
+----
+LocalDateTime timePoint = LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS);
+LocalDate.of(2012, Month.DECEMBER, 12);
+LocalTime.of(17, 18);
+
+Period period = Period.of(3, 2, 1);
+
+Duration duration = Duration.ofSeconds(3, 5);
+Duration oneDay = Duration.between(today, yesterday);
+----
 
 === contrôle des processus de l'OS
 
@@ -228,7 +267,8 @@ else {
 peut être remplacer par
 
   Array.parallelSort(monTableau)
-
+* dispariton du PermGem
+* 
 [NOTE.speaker]
 --
 Adder concurrent qui permet de continué l'ajout même après un probème de contention
