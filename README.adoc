@@ -197,6 +197,9 @@ else {
 * les Concurrent Adders
 * Opérations Numériques Exactes
 * Génération Aléatoire Sécurisée
+
+  SecureRandom.getInstanceStrong()
+
 * les tri en parallèle
 
   Array.sort(monTableau)
