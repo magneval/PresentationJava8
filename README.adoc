@@ -285,9 +285,29 @@ Math.xxxExact(<T> x,<T> y) throw ArithmeticException
 
 == la programmation fonctionnelle
 
-Java8 fait la part belle à la programmation fonctionnelle
+Java 8 fait la part belle à la programmation fonctionnelle
 
 === les Références Optionnelles (Optional)
+[%step]
+Qui n'a jamais pesté contre une NPE ?
+La réponse Kotlin : 
+
+  var a: String = "abc"
+  a = null // compilation error
+  var b: String? = "abc"
+  b = null // ok
+
+La réponse Scala :
+
+  val name: Option[String] = request getParameter "name"
+
+La réponse Java8 : Utiliser des Optional<T>
+
+ Optional<User> tryFindUser(int userID) {
+ void processUser(User user, Optional<Cart> shoppingCart) {
+ value.ifPresent(System.out::print);
+ Optional<Foo> opt = ...
+ Foo x = opt.orElse( new Foo() );
 
 
 === les Interfaces fonctionnelles
@@ -308,6 +328,8 @@ Le nouveau package http://docs.oracle.com/javase/8/docs/api/java/util/function/p
 
 
 === les Lambdas
+
+C'est la partie la plus connu de Java8,
 
 === Les références a des méthodes
      // Assignment context
