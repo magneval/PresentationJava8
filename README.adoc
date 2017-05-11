@@ -303,11 +303,12 @@ La réponse Scala :
 
 La réponse Java8 : Utiliser des Optional<T>
 
- Optional<User> tryFindUser(int userID) {
+ Optional<User> tryFindUser(int userID) { ... }
  void processUser(User user, Optional<Cart> shoppingCart) {
- value.ifPresent(System.out::print);
- Optional<Foo> opt = ...
+   boolean flag=shoppingCart.isPresent(); ... }
+ Optional<Foo> opt =  Optional.ofNullable(T value);
  Foo x = opt.orElse( new Foo() );
+ value.ifPresent(System.out::print);
 
 
 === les Interfaces fonctionnelles
