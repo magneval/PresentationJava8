@@ -331,6 +331,34 @@ Le nouveau package http://docs.oracle.com/javase/8/docs/api/java/util/function/p
 === les Lambdas
 
 C'est la partie la plus connu de Java8,
+Il s'agit de la base de la programmation fonctionnelle dans Java.
+Une expression lambda peut être assimilée à une fonction anonyme.
+
+Avant
+[source]
+Arrays.sort(testStrings, new Comparator<String>() { 
+    @Override 
+    public int compare(String s1, String s2) { 
+        return(s1.length() - s2.length()); 
+    } 
+});
+----
+
+Après
+[source]
+----
+Arrays.sort(testStrings, (String s1, String s2) -> { return s1.length() – s2.length(); });
+----
+ou
+[source]
+----
+Arrays.sort(testStrings, (String s1, String s2) -> s1.length() – s2.length(););
+----
+ou
+[source]
+----
+Arrays.sort(testStrings, (s1, s2) -> s1.length() – s2.length(););
+----
 
 === Les références a des méthodes
      // Assignment context
