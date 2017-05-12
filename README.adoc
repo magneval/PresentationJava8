@@ -365,6 +365,24 @@ Arrays.sort(testStrings, (s1, s2) -> s1.length() – s2.length(););
 === Les références a des méthodes
      // Assignment context
      Predicate<String> p = String::isEmpty;
+     
+     Supplier<Double> random = Math::random; 
+     double result = random.get(); // Math.random();
+     
+     Random r = new Random(); 
+     Supplier<Double> random2 = r::nextDouble; 
+     double result2 = random2.get(); // r.nextDouble();
+     
+     Function<Random,Double> random3 = Random::nextDouble; 
+     Random r1 = new Random(); 
+     Random r2 = new Random(); 
+     Random r3 = new Random(); 
+     double result1 = random3.apply(r1); // r1.nextDouble(); 
+     double result2 = random3.apply(r2); // r2.nextDouble(); 
+     double result3 = random3.apply(r3); // r2.nextDouble();
+     
+     Function<String, Thread> factory = Thread::new; 
+     Thread t = factory.apply("name"); // new Thread("name");
 
 === les Méthodes par défaut
 
