@@ -360,6 +360,8 @@ ou
 Arrays.sort(testStrings, (s1, s2) -> s1.length() – s2.length(););
 ----
 
+  Runnable r1 = () -> { System.out.println("My Runnable"); };
+
 === Les références a des méthodes
      // Assignment context
      Predicate<String> p = String::isEmpty;
