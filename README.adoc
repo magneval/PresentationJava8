@@ -372,6 +372,10 @@ Arrays.sort(testStrings, (s1, s2) -> s1.length() – s2.length(););
 
 == Les Streams
 
+     int sum = widgets.stream()
+                      .filter(w -> w.getColor() == RED)
+                      .mapToInt(w -> w.getWeight())
+                      .sum();
 
 == le Future
 Quid de l’avenir ?
