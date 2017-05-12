@@ -377,6 +377,11 @@ Arrays.sort(testStrings, (s1, s2) -> s1.length() – s2.length(););
                       .mapToInt(w -> w.getWeight())
                       .sum();
 
+  list.parallelStream().forEach( (value) -> {
+   // traitement sur value (dans des threads parallel)
+  });
+
+
 == le Future
 Quid de l’avenir ?
 
